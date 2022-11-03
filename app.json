@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Distance-Calculator",
+    "slug": "Distance-Calculator",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.distancecalc",
+      "infoPlist": {
+        "UIBackgroundModes": ["location", "fetch", "audio"]
+      }
+      
+    },
+    "android": {
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "FOREGROUND_SERVICE",
+        "ACCESS_BACKGROUND_LOCATION"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.distancecalc",
+      "staysActiveInBackground": true 
+
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
